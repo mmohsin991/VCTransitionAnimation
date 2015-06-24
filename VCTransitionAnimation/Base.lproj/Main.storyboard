@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DcM-PE-ncm">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="VCTransitionAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b99-7F-cN8">
+                                <rect key="frame" x="264" y="28" width="40" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.17080883569999999" blue="0.56104548320000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="dnY-kc-rQ8"/>
+                                    <constraint firstAttribute="width" constant="40" id="gIE-rg-EmL"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Sd7-n2-HAB" kind="show" identifier="PushSegue" id="5c1-1H-Fli"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.01176470588" green="0.66274509800000003" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="b99-7F-cN8" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="gii-5b-s7D"/>
+                            <constraint firstItem="b99-7F-cN8" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="qah-bG-9Sw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Qde-zM-fED"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="button" destination="b99-7F-cN8" id="IIu-t8-dGA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="696" y="-371"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2qc-2m-mcd">
+            <objects>
+                <viewController id="Sd7-n2-HAB" customClass="ViewController" customModule="VCTransitionAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vJQ-TH-Yuk"/>
+                        <viewControllerLayoutGuide type="bottom" id="IGQ-h6-3Yx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mJ0-Qe-iWj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDI-sH-Z9f">
+                                <rect key="frame" x="264" y="28" width="40" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="GVm-8h-gda"/>
+                                    <constraint firstAttribute="width" constant="40" id="P7d-j5-AON"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="circleTapped:" destination="Sd7-n2-HAB" eventType="touchUpInside" id="ayZ-kf-aRm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.80808786470000005" blue="0.18643077799999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="DDI-sH-Z9f" firstAttribute="leading" secondItem="mJ0-Qe-iWj" secondAttribute="leadingMargin" constant="248" id="9MF-Qk-hec"/>
+                            <constraint firstItem="DDI-sH-Z9f" firstAttribute="top" secondItem="vJQ-TH-Yuk" secondAttribute="bottom" constant="8" id="CYS-j3-eG0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="DDI-sH-Z9f" id="71H-Qg-GMQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NAV-xJ-PFl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1103" y="-371"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="EjV-UF-qzR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="DcM-PE-ncm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pyw-eS-uel">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <outlet property="delegate" destination="l1n-sG-Sq8" id="m0S-0N-qmR"/>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="8RC-Oo-SRv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s0S-nI-aq1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="l1n-sG-Sq8" customClass="NavigationControllerDelegate" customModule="VCTransitionAnimation" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="230" y="-371"/>
+        </scene>
+    </scenes>
+</document>
