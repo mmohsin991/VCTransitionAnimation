@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7A0ACCE2-5C2A-40CD-B41D-925A000993E7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>VCTransitionAnimation</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2E2978281ED4B375376E1FC7ABCDEB4C307DF8C2</key>
+		<string>https://github.com/mmohsin991/VCTransitionAnimation.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>VCTransitionAnimation.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2E2978281ED4B375376E1FC7ABCDEB4C307DF8C2</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/mmohsin991/VCTransitionAnimation.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2E2978281ED4B375376E1FC7ABCDEB4C307DF8C2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2E2978281ED4B375376E1FC7ABCDEB4C307DF8C2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>VCTransitionAnimation</string>
+		</dict>
+	</array>
+</dict>
+</plist>
