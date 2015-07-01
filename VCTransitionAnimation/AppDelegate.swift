@@ -6,6 +6,9 @@
 //  Copyright (c) 2015 PanaCloud. All rights reserved.
 //
 
+// http://www.raywenderlich.com/86521/how-to-make-a-view-controller-transition-animation-like-in-the-ping-app
+
+
 import UIKit
 
 @UIApplicationMain
