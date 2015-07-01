@@ -8,7 +8,8 @@
 
 import UIKit
 
-class VC2: UIViewController {
+class VC2: UIViewController,
+            CircleTransitionProtocol {
 
     @IBOutlet weak var button: UIButton!
 
@@ -23,12 +24,11 @@ class VC2: UIViewController {
         
     }
     
-    
-    
-    override func viewDidAppear(animated: Bool) {
-        
-        super.myTransitionView = self.button
-
+    // implement CircleTransitionProtocol
+    var pointOfAnimation: UIView {
+        get {
+            return button
+        }
     }
     
     @IBAction func printLn(sender: UIButton) {

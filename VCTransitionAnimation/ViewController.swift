@@ -10,7 +10,8 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,
+                        CircleTransitionProtocol {
 
     @IBOutlet weak var button: UIButton!
     
@@ -18,17 +19,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-    }
-    
-    
-    
-    override func viewDidAppear(animated: Bool) {
-        
-        super.myTransitionView = self.button
         
     }
     
-
+    // implement CircleTransitionProtocol
+    var pointOfAnimation: UIView {
+        get {
+            return button
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

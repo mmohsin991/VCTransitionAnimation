@@ -17,19 +17,7 @@ class NavigationControllerDelegate: NSObject, UINavigationControllerDelegate {
     }
 }
 
-
-
-extension UIViewController{
-    var myTransitionView : UIView {
-        get{
-            return MyTransitionView.myTransitionView
-        }
-        set{
-            MyTransitionView.myTransitionView = newValue
-        }
-    }
-}
-
-struct MyTransitionView{
-    static var myTransitionView = UIView()
+@objc
+protocol CircleTransitionProtocol {
+    var pointOfAnimation: UIView { get }
 }
