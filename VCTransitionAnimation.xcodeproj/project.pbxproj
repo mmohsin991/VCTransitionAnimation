@@ -14,6 +14,7 @@
 		421721D61B3B33660082C709 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 421721D41B3B33660082C709 /* LaunchScreen.xib */; };
 		421721E21B3B33670082C709 /* VCTransitionAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421721E11B3B33670082C709 /* VCTransitionAnimationTests.swift */; };
 		421721F01B3B3DA70082C709 /* NavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421721EF1B3B3DA60082C709 /* NavigationControllerDelegate.swift */; };
+		42C66DBE1B4415F90071849D /* VC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C66DBD1B4415F90071849D /* VC2.swift */; };
 		42F4FCD41B3B401900D73713 /* CircleTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F4FCD31B3B401900D73713 /* CircleTransitionAnimator.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		421721E01B3B33670082C709 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		421721E11B3B33670082C709 /* VCTransitionAnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCTransitionAnimationTests.swift; sourceTree = "<group>"; };
 		421721EF1B3B3DA60082C709 /* NavigationControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerDelegate.swift; sourceTree = "<group>"; };
+		42C66DBD1B4415F90071849D /* VC2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VC2.swift; sourceTree = "<group>"; };
 		42F4FCD31B3B401900D73713 /* CircleTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleTransitionAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +85,7 @@
 			children = (
 				421721CB1B3B33660082C709 /* AppDelegate.swift */,
 				421721CD1B3B33660082C709 /* ViewController.swift */,
+				42C66DBD1B4415F90071849D /* VC2.swift */,
 				421721EF1B3B3DA60082C709 /* NavigationControllerDelegate.swift */,
 				42F4FCD31B3B401900D73713 /* CircleTransitionAnimator.swift */,
 				421721CF1B3B33660082C709 /* Main.storyboard */,
@@ -220,6 +223,7 @@
 			files = (
 				421721F01B3B3DA70082C709 /* NavigationControllerDelegate.swift in Sources */,
 				421721CE1B3B33660082C709 /* ViewController.swift in Sources */,
+				42C66DBE1B4415F90071849D /* VC2.swift in Sources */,
 				42F4FCD41B3B401900D73713 /* CircleTransitionAnimator.swift in Sources */,
 				421721CC1B3B33660082C709 /* AppDelegate.swift in Sources */,
 			);

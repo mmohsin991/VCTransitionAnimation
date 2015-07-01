@@ -8,6 +8,12 @@
 
 import UIKit
 
+
+protocol Container {
+    typealias ItemType
+    
+}
+
 class CircleTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
     
     weak var transitionContext: UIViewControllerContextTransitioning?
@@ -21,25 +27,26 @@ class CircleTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning 
         //1
         self.transitionContext = transitionContext
         
+        
         //2
         var containerView = transitionContext.containerView()
-        var fromViewController = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey) as ViewController
-        var toViewController = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey) as ViewController
-        var button = fromViewController.button
+        var fromViewController = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey)
+        var toViewController = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey)
+        var transitionView = fromViewController!.myTransitionView
         
         //3
-        containerView.addSubview(toViewController.view)
+        containerView.addSubview(toViewController!.view)
         
         //4
-        var circleMaskPathInitial = UIBezierPath(ovalInRect: button!.frame)
-        var extremePoint = CGPoint(x: button!.center.x - 0, y: button.center.y - CGRectGetHeight(toViewController.view.bounds))
+        var circleMaskPathInitial = UIBezierPath(ovalInRect: transitionView.frame)
+        var extremePoint = CGPoint(x: transitionView.center.x - 0, y: transitionView.center.y - CGRectGetHeight(toViewController!.view.bounds))
         var radius = sqrt((extremePoint.x*extremePoint.x) + (extremePoint.y*extremePoint.y))
-        var circleMaskPathFinal = UIBezierPath(ovalInRect: CGRectInset(button.frame, -radius, -radius))
+        var circleMaskPathFinal = UIBezierPath(ovalInRect: CGRectInset(transitionView.frame, -radius, -radius))
         
         //5
         var maskLayer = CAShapeLayer()
         maskLayer.path = circleMaskPathFinal.CGPath
-        toViewController.view.layer.mask = maskLayer
+        toViewController!.view.layer.mask = maskLayer
         
         //6
         var maskLayerAnimation = CABasicAnimation(keyPath: "path")

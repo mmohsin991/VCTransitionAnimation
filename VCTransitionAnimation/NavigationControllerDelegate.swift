@@ -16,3 +16,20 @@ class NavigationControllerDelegate: NSObject, UINavigationControllerDelegate {
         return CircleTransitionAnimator()
     }
 }
+
+
+
+extension UIViewController{
+    var myTransitionView : UIView {
+        get{
+            return MyTransitionView.myTransitionView
+        }
+        set{
+            MyTransitionView.myTransitionView = newValue
+        }
+    }
+}
+
+struct MyTransitionView{
+    static var myTransitionView = UIView()
+}

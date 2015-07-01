@@ -53,10 +53,10 @@
             </objects>
             <point key="canvasLocation" x="696" y="-371"/>
         </scene>
-        <!--View Controller-->
+        <!--VC2-->
         <scene sceneID="2qc-2m-mcd">
             <objects>
-                <viewController id="Sd7-n2-HAB" customClass="ViewController" customModule="VCTransitionAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Sd7-n2-HAB" customClass="VC2" customModule="VCTransitionAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vJQ-TH-Yuk"/>
                         <viewControllerLayoutGuide type="bottom" id="IGQ-h6-3Yx"/>
@@ -81,7 +81,16 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="circleTapped:" destination="Sd7-n2-HAB" eventType="touchUpInside" id="ayZ-kf-aRm"/>
+                                    <action selector="circleTapped:" destination="Sd7-n2-HAB" eventType="touchUpInside" id="4V8-VL-Lzp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YJ8-Jl-ZM5">
+                                <rect key="frame" x="112" y="100" width="97" height="41"/>
+                                <state key="normal" title="PrintLn">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="printLn:" destination="Sd7-n2-HAB" eventType="touchUpInside" id="y0z-P0-w9i"/>
                                 </connections>
                             </button>
                         </subviews>
