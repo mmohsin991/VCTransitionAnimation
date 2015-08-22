@@ -36,6 +36,7 @@ class ViewController: UIViewController,
 
     @IBAction func circleTapped(sender:UIButton) {
         self.navigationController?.popViewControllerAnimated(true)
+        
     }
 }
 

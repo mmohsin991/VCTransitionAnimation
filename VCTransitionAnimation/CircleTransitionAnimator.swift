@@ -32,7 +32,7 @@ class CircleTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning 
         var containerView = transitionContext.containerView()
         var fromViewController = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey)
         var toViewController = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey)
-        var transitionView = (fromViewController as CircleTransitionProtocol).pointOfAnimation
+        var transitionView = (fromViewController as! CircleTransitionProtocol).pointOfAnimation
         
         //3
         containerView.addSubview(toViewController!.view)
@@ -49,9 +49,13 @@ class CircleTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning 
         toViewController!.view.layer.mask = maskLayer
         
         //6
-        var maskLayerAnimation = CABasicAnimation(keyPath: "path")
-        maskLayerAnimation.fromValue = circleMaskPathInitial.CGPath
-        maskLayerAnimation.toValue = circleMaskPathFinal.CGPath
+        var maskLayerAnimation = CAKeyframeAnimation(keyPath: "path")
+
+//        maskLayerAnimation.fromValue = circleMaskPathInitial.CGPath
+//        maskLayerAnimation.toValue = circleMaskPathFinal.CGPath
+        
+        maskLayerAnimation.values = [circleMaskPathInitial.CGPath, circleMaskPathFinal.CGPath]
+
         maskLayerAnimation.duration = self.transitionDuration(transitionContext)
         maskLayerAnimation.delegate = self
         maskLayer.addAnimation(maskLayerAnimation, forKey: "path")
